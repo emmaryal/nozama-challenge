@@ -1,0 +1,82 @@
+{
+  "stats": [
+    {
+      "id": 1,
+      "date": "2021-01-01",
+      "recoveredKg": 570,
+      "TRR": 590
+    },
+    {
+        "id": 2,
+        "date": "2021-01-08",
+        "recoveredKg": 560,
+        "TRR": 288
+    },
+      {
+        "id": 3,
+        "date": "2021-01-15",
+        "recoveredKg": 812,
+        "TRR": 123
+      },
+      {
+        "id": 4,
+        "date": "2021-01-22",
+        "recoveredKg": 586,
+        "TRR": 128
+      },
+      {
+        "id": 5,
+        "date": "2021-01-29",
+        "recoveredKg": 389,
+        "TRR": 813
+      },
+      {
+        "id": 6,
+        "date": "2021-02-05",
+        "recoveredKg": 610,
+        "TRR": 269
+      },
+      {
+        "id": 7,
+        "date": "2021-02-12",
+        "recoveredKg": 839,
+        "TRR": 692
+      },
+      {
+        "id": 8,
+        "date": "2021-02-19",
+        "recoveredKg": 183,
+        "TRR": 306
+      },
+      {
+          "id": 9,
+          "date": "2021-02-26",
+          "recoveredKg": 604,
+          "TRR": 159
+        },
+        {
+          "id": 10,
+          "date": "2021-03-05",
+          "recoveredKg": 493,
+          "TRR": 593
+        },
+        {
+          "id": 11,
+          "date": "2021-03-12",
+          "recoveredKg": 495,
+          "TRR": 184
+        },
+        {
+          "id": 12,
+          "date": "2021-03-19",
+          "recoveredKg": 506,
+          "TRR": 273
+        },
+        {
+          "id": 13,
+          "date": "2021-03-24",
+          "recoveredKg": 950,
+          "TRR": 179
+        }
+  ]
+}
