@@ -1,67 +1,153 @@
 * {
-  border: 0;
-  padding: 0;
-  font-size: 16.25px;
   align-items: center;
+  border: 0;
+  font-size: 16.25px;
+  padding: 0;
 }
 body {
-  margin: 2rem;
+  max-height: 95%;
+  padding: 2rem;
 }
-
+h3 {
+  margin: 0;
+}
 .header {
   display: flex;
+  height: 20%;
   justify-content: space-between;
+  margin-bottom: 0;
 }
 .header img {
   width: 20vw;
 }
 .header h3 {
-  font-size: 2.5rem;
   color: lightgrey;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5rem;
 }
+.container {
+  display: flex;
+  flex-direction: column;
 
-.calendar {
-  border: 1px solid black;
-  padding: 2rem;
+  width: 100%;
 }
 #stats {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#calendar {
+  border: 1px solid black;
+  display: inline-block;
+  height: 15px;
+  margin: 2rem 0;
+  padding: 1rem;
+  width: 25%;
+}
+
+#calendar input {
+  font-size: small;
+}
+
+#calendar img {
+  float: left;
+  margin: 0 5px 0 90px;
+  width: 25px;
+}
+.react-datepicker-wrapper {
+  width: auto;
+}
+.react-datepicker__input-container,
+.react-datepicker-wrapper input {
+  display: inline;
+  margin: auto;
+
+  width: 200px;
 }
 
 #trr,
 #recovered {
-  width: 25vw;
-  height: 15vh;
-  margin: 2rem;
-  padding: 1.5rem;
-  border-radius: 0.8rem;
   border: 1px;
+  border-radius: 0.2rem;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+  color: grey;
+  font-size: 1rem;
+  height: 120px;
+  margin: 6rem 0 2rem 0;
+  padding: 0;
+  width: 25%;
+}
+#trr img,
+#recovered img,
+.canvas img {
+  float: left;
+  margin: 5px 0 0 5px;
+  width: 40px;
+}
+
+#trr span,
+#recovered span,
+.canvas span {
+  font-size: 1.3rem;
+}
+.data {
+  color: black;
   font-size: 2rem;
+  font-weight: 700;
+  margin: auto;
+  width: 50px;
 }
 
-#trr img {
-  width: 35px;
+#myChart {
+  border: 0 1px 1px 1px;
+  border-radius: 0.2rem;
+  box-shadow: 0 3px 3px 3px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
-#recovered img {
-  width: 35px;
+.canvas {
+  max-height: 600px;
+  width: 100%;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
+span {
+  font-size: 0.5rem;
 }
 
-@media only screen and (max-width: 600px) {
-  .header {
-    flex-wrap: wrap;
-  }
-  .header img {
-    width: 90vw;
+@media screen and (max-width: 850px) {
+  .header,
+  .container {
+    align-items: center;
+    flex-direction: column;
   }
 
   .header h3 {
     font-size: 2rem;
+  }
+
+  #calendar {
+    width: 90%;
+  }
+
+  #calendar img {
+    float: left;
+    margin: 0 5px 0 90px;
+    width: 25px;
+  }
+
+  #trr,
+  #recovered,
+  .header img {
+    margin: 1rem;
+    width: 100%;
+  }
+
+  #stats {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .canvas {
+    height: 300px;
+    width: 100%;
   }
 }
